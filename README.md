@@ -15,6 +15,19 @@ Note:
 (.venv$: west espressif monitor -p /dev/ttyUSB0)
 
 =========================================================================
+## search fail message command
+
+find build/ -type f | xargs grep -E dts_ord_41
+
+## search key word infor find .c .h files
+
+grep -nre "check power" --include="*.[ch]"
+
+## Kconfig search
+
+https://docs.zephyrproject.org/latest/kconfig.html
+
+=========================================================================
 
 HW : NodeMCU-32
 
@@ -26,8 +39,18 @@ Reference:
 
 3. [zephyr 3.7.0 esp32_devkitc_wroom](https://docs.zephyrproject.org/3.7.0/boards/espressif/esp32_devkitc_wroom/doc/index.html)
 
-4. [ADUINO SAMPLES WEB](https://www.lanmootech.com/courses/ultimate/lesson/%e9%96%8b%e9%97%9c%e6%8e%a7%e5%88%b6-led-%e7%87%88-%e5%96%ae%e5%85%83/)
+note Step1. [Find device tree Bindings Generic or vendor-independent](https://docs.zephyrproject.org/3.7.0/build/dts/api/bindings.html)
+
+note Step2. ./zephyrproject/zephyr/dts/bindings/ ymal files
+
+note Step3. [Docs / 3.7.0 » Hardware Support](https://docs.zephyrproject.org/3.7.0/hardware/index.html)
+
+[Peripherals](https://docs.zephyrproject.org/3.7.0/hardware/peripherals/index.html) exsample ADC. PWM. LED
 
 youtube:
 
-5. [ESP32 on Zephyr OS: GPIO Interrupt (ISR) [Part 3]](https://www.youtube.com/watch?v=NlRM2IfODTs)
+4. [ESP32 on Zephyr OS: GPIO Interrupt (ISR) [Part 3]](https://www.youtube.com/watch?v=NlRM2IfODTs)
+
+
+5. [ADUINO SAMPLES WEB](https://www.lanmootech.com/courses/ultimate/lesson/%e9%96%8b%e9%97%9c%e6%8e%a7%e5%88%b6-led-%e7%87%88-%e5%96%ae%e5%85%83/)
+
